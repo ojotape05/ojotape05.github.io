@@ -292,11 +292,11 @@
                 <div class="link-arrow">→</div>
             </a>
 
-            <a href="tel:+553131234567" class="link-item">
+            <a id='telefone-div' href="tel:+5530611221" class="link-item">
                 <div class="link-icon">📞</div>
                 <div class="link-content">
                     <div class="link-title">Telefone</div>
-                    <div class="link-description">(31) 3123-4567</div>
+                    <div class="link-description">(27) 3061-1221</div>
                 </div>
                 <div class="link-arrow">→</div>
             </a>
@@ -345,7 +345,7 @@
                 <div class="link-arrow">→</div>
             </a>
 
-            <a href="https://homologacaoecertificacao.totvs.com/document/pvt-software-e-servicos-ltda">
+            <a href="https://homologacaoecertificacao.totvs.com/document/pvt-software-e-servicos-ltda" target="_blank">
                 <div class="certificado_div">
                     <img
                         class="certificado"
@@ -409,6 +409,8 @@
                 if (phoneDescription) {
                     phoneDescription.textContent = displayPhone;
                 }
+            } else {
+                document.getElementById('telefone_div').style.display = 'none'
             }
         }
 
